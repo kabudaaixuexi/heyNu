@@ -1,0 +1,19 @@
+<view class="navigation" style="padding-top:{{menuButtonObject.top}}px;background-color:{{bgcolor}}">
+  <view class="con" style="height:{{menuButtonObject.height}}px">
+    <view bindtap="back" class="leftcon">
+        <image wx:if="{{showBack}}" src="/assets/public/back.png" />
+        <slot name="leftcon"></slot>
+    </view>
+    <view class="container">
+        <slot name="container"></slot>
+    </view>
+    <view wx:if="{{rightconShow}}" bindtap="rightcon" class="rightcon">
+        <slot name="rightcon"></slot>
+    </view>  
+  </view>
+</view>
+<view class="pull" style="height:{{menuButtonObject.bottom + 10}}px">
+    <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F687e7c6f5504195d6a35301c5014a499c32b4e07acef-ug51wJ_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628876012&t=a2ab5cfc058804fa2bccc338521272af" />
+</view>
+
+

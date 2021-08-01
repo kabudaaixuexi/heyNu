@@ -1,0 +1,26 @@
+page{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.empty{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+}
+.model{
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  width: 80vw;
+  height: 30vh;
+  border-radius: 24rpx;
+  background: #fff;
+  overflow: hidden;
+  z-index: 9;
+}

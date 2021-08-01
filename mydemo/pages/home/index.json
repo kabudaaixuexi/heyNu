@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "提交测试订单至数据库",
+  "enablePullDownRefresh":false,
+  "usingComponents": {
+    "customTabbar":"/components/tabbar/tabbar",
+    "foodItem":"../../components/foodItem/foodItem"
+  }
+}

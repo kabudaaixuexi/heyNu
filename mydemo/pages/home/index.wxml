@@ -1,0 +1,26 @@
+<i-panel i-class="panel" title="测试订单 - 外层信息">
+	<i-input bind:change="phoneInput" style="margin-top:12rpx;display:block" value="{{ phone }}" maxlength="22" type="number" title="联系电话" placeholder="收货人手机号" />
+    <view style="position:relative">
+        <i-input bind:change="remarkInput" value="{{ remark }}" type="textarea" title="详细地址" placeholder="请输入详细地址(最多50字)" maxlength="50" />
+        <image catchtap="remarkClick" class="breathing remark_icon" src="/assets/home/remark.png" />
+    </view>
+    <i-input bind:change="tipInput" value="{{ tip }}" type="textarea" title="备注" placeholder="为此订单备注" maxlength="50" />
+    <i-input i-class="input" value="{{ totalprice }}" type="number" disabled right title="消费总额" mode="wrapped" placeholder="添加商品后自动填充" />
+</i-panel>
+
+<i-button wx:if="{{!alradd}}" style="margin-top:88rpx" i-class="button" bind:click="shopClick" type="primary">添加商品</i-button>
+
+<i-panel wx:if="{{alradd}}" title="测试订单 - 商品列表">
+    <foodItem wx:for="{{list}}" data="{{item}}" />
+</i-panel>
+
+<i-button wx:if="{{alradd}}" style="margin-top:88rpx" i-class="button" bind:click="submitClick" type="primary">提交订单</i-button>
+
+
+
+<i-toast id="toast" />
+<i-message id="message" />
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+<!-- 底部自定义导航 -->
+<customTabbar tabbatIndex="0" />
+

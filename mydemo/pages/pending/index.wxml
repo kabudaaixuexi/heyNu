@@ -1,0 +1,52 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<view class="pending">
+    <view wx:for="{{foodlist}}" class="top">
+          <view class="pic">
+                <image src="{{item.imgurl}}" />
+          </view>
+          <view class="title">
+                <view class="name">{{item.name}}</view>
+                <view class="detail">
+                      <view class="label">
+                              <view wx:for="{{filter.btitle(item.label)}}" class="label_item">{{item}}</view>
+                      </view>
+                      <view class="total">
+                              <view class="cnt"><text style="font-size:20rpx">x </text>{{item.cnt}}</view>
+                              <view class="price"><text style="font-size:24rpx">¥ </text>{{item.price}}</view>
+                      </view>
+                </view>
+          </view>
+    </view>
+
+    <view class="cotainer">
+         <i-input i-class="input"  maxlength="50" type="textarea" bind:change="inputChange" value="{{ evaluate }}" placeholder="请输入评价" />
+         <view class="up_img">
+            <view class='img' wx:for="{{pics}}" wx:key='index'>
+                  <image class="picitem" src="{{item}}" />
+                  <image class="del" src="/assets/pending/del.png" bindtap="delupimg" data-index="{{index}}" />
+            </view>
+            <image class="up_logo" wx:if="{{true}}" bindtap="upShopLogo" src="/assets/pending/pending.png" />
+         </view>
+         <view style="padding:24rpx;font-size:24rpx;color:#666">
+            为此订单打个分吧～
+         </view>
+         <view style="padding:0 18rpx;margin-bottom:78rpx">
+            <i-rate 
+                  count="{{10}}"
+                  value="{{score}}"
+                  bind:change="starChange"  
+                  size="30">
+            </i-rate>
+         </view>
+    </view>
+
+    <i-button  i-class="button" bind:click="shopClick" type="primary" loading="{{loading}}">立即评价</i-button>
+
+</view>
+
+
+
+
+<i-toast id="toast" />
+<i-message id="message" />
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

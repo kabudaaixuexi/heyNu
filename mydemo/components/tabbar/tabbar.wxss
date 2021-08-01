@@ -1,0 +1,120 @@
+._tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  padding-bottom: 48rpx;
+  box-sizing: border-box;
+  padding-left: 36rpx;
+  padding-right: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  font-size: 26rpx;
+  color: #cdcdcd;
+  box-shadow: 0px -7rpx 13rpx 0px rgba(193, 185, 204, 0.13);
+}
+._tabbar .titem {
+  text-align: center;
+  /* width: 33.3%; */
+}
+._tabbar .titem image {
+  display: block;
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+}
+
+._tabbarTxt{
+  font-size: 10px;
+}
+
+._tabbar .tCdk {
+}
+
+._tabbar .tCdkTxt{
+    color: #1296db;
+    margin-bottom: 18rpx;
+    display: block;
+    animation: txtCd 1s 1 forwards;
+}
+@keyframes txtCd{
+  0%{
+    transform: translateX(0);
+    letter-spacing: 4rpx;
+    opacity: 1;
+  }
+  50%{
+    transform: translateX(6rpx);
+    letter-spacing: 12rpx;
+    opacity: .8;
+  }
+  100%{
+    transform: translateX(0);
+    letter-spacing: 4rpx;
+    opacity: 1;
+  }
+}
+
+._tabbar .tCdkImg{
+    transition: .6s;
+    transform: scale(1.2);
+    margin-bottom: 24rpx;
+  }
+  .image{
+    padding: 12rpx;
+    display: block;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .rubber {
+    animation: rubber 1.6s 1 forwards
+}
+
+@keyframes rubber {
+  0% {
+      animation-timing-function: cubic-bezier(0.1858,0.2841,0.5834,1.4615);
+      transform: scaleY(1.3052) scaleX(1.2)
+  }
+
+  31% {
+      animation-timing-function: cubic-bezier(0.0467,0.1102,0.4803,1.4719);
+      transform: scaleY(1.4254) scaleX(1.4)
+  }
+
+  41% {
+      animation-timing-function: cubic-bezier(0.0469,0.1108,0.4775,1.4732);
+      transform: scaleY(1.3052) scaleX(1.4)
+  }
+
+  51% {
+      animation-timing-function: cubic-bezier(0.0478,0.1131,0.4723,1.4819);
+      transform: scaleY(1.4664) scaleX(1.4)
+  }
+
+  61% {
+      animation-timing-function: cubic-bezier(0.0506,0.1192,0.4639,1.4818);
+      transform: scaleY(1.3536) scaleX(1.4)
+  }
+
+  71% {
+      animation-timing-function: cubic-bezier(0.0581,0.1374,0.457,1.4901);
+      transform: scaleY(1.4326) scaleX(1.4)
+  }
+
+  81% {
+      animation-timing-function: cubic-bezier(0.0765,0.1813,0.4542,1.4923);
+      transform: scaleY(1.3772) scaleX(1.4)
+  }
+
+  91% {
+      animation-timing-function: cubic-bezier(0.1747,0.3181,0.341,0.878);
+  }
+
+  100% {
+      transform: scaleY(1.25) scaleX(1.25) translateY(-10%)
+  }
+}

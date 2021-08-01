@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": false,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "movable":"/components/movable/movable",
+    "customTabbar":"/components/tabbar/tabbar"
+  }
+}

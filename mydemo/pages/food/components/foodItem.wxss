@@ -1,0 +1,81 @@
+.food_item{
+  display: grid;
+  background: #fff;
+  grid-template-columns: 2fr 6fr 2fr;
+  padding: 36rpx;
+  box-sizing: content-box;
+}
+.item_left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item_left image{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  border-radius: 6rpx;
+  background: #f6f6f6;
+}
+
+.item_con{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item_con .fname{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.item_con .label{
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item_con .label .label_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12rpx;
+  background: #f6f6f6;
+  border-radius: 3rpx;
+  padding: 3rpx 6rpx;
+  font-size: 16rpx;
+}
+
+.item_right{
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-end;
+  flex-direction: column;
+}
+.item_right .price{
+  font-size: 30rpx;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.item_right .options{
+  display: flex;
+}
+.number{
+  display: flex;
+  align-items: center;
+  margin-right: -24rpx;
+  margin-bottom: -24rpx;
+}
+.number view{
+  padding: 4rpx;
+  min-width: 46rpx;
+  border-radius: 50%;
+}
+.number view:nth-of-type(1){
+  border-color:#999 ;
+}
+.number view:nth-of-type(2){
+  border-color:#1296db ;
+}
+.number input{
+  height: 20px;
+  border-radius: 4rpx;
+  margin: 0 12rpx;
+  font-weight: 500;
+  line-height: 20px;
+  min-width: 66rpx;
+}

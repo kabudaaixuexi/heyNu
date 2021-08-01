@@ -1,0 +1,77 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/position/index",
+    "pages/mine/index",
+    "pages/evaluate/index",
+    "pages/order/index",
+    "custom-tab-bar/index",
+    "pages/pending/index",
+    "pages/test/index",
+    "pages/food/index",
+    "pages/login/index",
+    "pages/socket/index",
+    "pages/userinfo/index",
+    "pages/record/index"
+  ],
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation",
+    "i-button": "../dist/button/index",
+    "i-toast": "../dist/toast/index",
+    "i-spin": "../dist/spin/index",
+    "i-cell": "../dist/cell/index",
+    "i-rate": "../dist/rate/index",
+    "i-input": "../dist/input/index",
+    "i-panel": "../dist/panel/index",
+    "i-checkbox-group": "../dist/checkbox-group/index",
+    "i-checkbox": "../dist/checkbox/index",
+    "i-radio-group": "../dist/radio-group/index",
+    "i-radio": "../dist/radio/index",
+    "i-notice-bar": "../dist/notice-bar/index",
+    "i-icon": "../dist/icon/index",
+    "i-input-number": "../dist/input-number/index",
+    "i-modal": "../dist/modal/index",
+    "i-message": "../dist/message/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4EFEB3",
+    "navigationBarTitleText": "合牛",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#fff"
+  },
+  "tabBar": {
+    "custom": true,
+    "selectedColor": "#f84846",
+    "list": [
+      {
+        "pagePath": "pages/record/index",
+        "text": "记录",
+        "iconPath": "./assets/icon/index.png",
+        "selectedIconPath": "./assets/icon/index_selected.png"
+      },
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "./assets/icon/index.png",
+        "selectedIconPath": "./assets/icon/index_selected.png"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单",
+        "iconPath": "./assets/icon/order.png",
+        "selectedIconPath": "./assets/icon/order_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "./assets/icon/wallet.png",
+        "selectedIconPath": "./assets/icon/wallet_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

@@ -1,0 +1,16 @@
+.input{
+  border: none;
+  overflow: visible !important;
+}
+.remark_icon{
+  border-radius: 50%;
+  border: 0.5rpx solid #1296db;
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 2;
+  right: 20px;
+  overflow: visible;
+  top: 50%;
+  transform: translateY(-50%);
+}

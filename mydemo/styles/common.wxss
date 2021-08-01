@@ -1,0 +1,82 @@
+@import "./anime.wxss";
+.button{
+  padding: 0 !important;
+}
+.i-modal-body{
+  max-height: 1000px !important;
+}
+/* grid */
+.g{
+  place-content: var(--pc,center);
+  display: grid;
+}
+.c1{
+  grid-template-columns:repeat(1, 1fr)
+}
+.c2{
+  grid-template-columns:repeat(2, 1fr)
+}
+.c3{
+  grid-template-columns:repeat(3, 1fr)
+}
+.c4{
+  grid-template-columns:repeat(4, 1fr)
+}
+.c5{
+  grid-template-columns:repeat(5, 1fr)
+}
+.r1{
+  grid-template-rows:repeat(1, 1fr)
+}
+.r2{
+  grid-template-rows:repeat(2, 1fr)
+}
+.r3{
+  grid-template-rows:repeat(3, 1fr)
+}
+
+.s-s{
+  --pc:center;
+}
+.s-c{
+  --pc:start center;
+}
+.s-e{
+  --pc:start end;
+}
+.c-s{
+  --pc:center start;
+}
+.c-e{
+  --pc:center end;
+}
+.e-s{
+  --pc:end start;
+}
+.e-c{
+  --pc:end center;
+}
+.e-e{
+  --pc:end end;
+}
+
+
+/* fontSize */
+.f9{
+  font-size: 18rpx;
+}
+.f10{
+  font-size: 20rpx;
+}
+.f12{
+  font-size: 24rpx;
+}
+.f14{
+  font-size: 28rpx;
+}
+.f16{
+  font-size: 32rpx;
+}
+.f18{
+  font-size: 36rpx;
+}

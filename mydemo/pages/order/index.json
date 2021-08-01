@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh":false,
+  "usingComponents": {
+    "customTabbar":"/components/tabbar/tabbar",
+    "orderItem":"./components/orderItem"
+  }
+}

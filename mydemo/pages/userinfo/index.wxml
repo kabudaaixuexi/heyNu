@@ -1,0 +1,8 @@
+<navigation bgColor="yellow" showBack="{{true}}"/>
+t
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>
+<i-cell title="跳转到首页" is-link url="/pages/dashboard/index"></i-cell>

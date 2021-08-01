@@ -1,0 +1,37 @@
+<navigation bgColor="yellow"/>
+<template is="header" data="{{userInfo}}"></template>
+<template is="model" data="{{optionsModel}}"></template>
+
+
+<template name="header">
+	<view class="header" bindtap="headerClick">
+			<view class="picture">
+					<image src="{{userInfo.picture}}"/>
+			</view>
+			<view class="information">
+					<view class="username">{{userInfo.nickname}}</view>
+					<view class="autograph">{{userInfo.autograph}}</view>
+			</view>
+	</view>
+</template>
+<template name="model">
+		<view class="g c3 r2 model">
+				<block wx:for="{{optionsModel}}" wx:key="index">
+					<navigator url="{{item.navLink}}">
+							<image class="model_item_image" src="{{item.iconPath}}" />
+							<view class="model_item_txt">{{item.optionName}}</view>
+					</navigator>
+				</block>
+		</view>
+</template>
+
+
+
+
+<i-toast id="toast" />
+<i-message id="message" />
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+	<!-- 底部自定义导航 -->
+	<customTabbar tabbatIndex="2" />
+
+	<movable  wx:if="{{true}}"/>

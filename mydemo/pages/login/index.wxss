@@ -1,0 +1,19 @@
+.container{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+
+.header{
+  height: 40vh;
+  width: 100%;
+}
+.header .logo{
+  --s:100rpx;
+  display: block;
+  width: var(--s,80rpx);
+  height: var(--s,80rpx);
+}

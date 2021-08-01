@@ -1,0 +1,57 @@
+/* header */
+.header{
+  background: #fff;
+  display: flex;
+}
+.header .picture{
+  margin: 24rpx;
+}
+.header .picture image{
+  padding: 0;
+  width: 160rpx;
+  height: 160rpx;
+  background: #f6f6f6;
+  border-radius: 50%;
+  display: block;
+}
+.header .information{
+  display: flex;
+  padding: 36rpx 12rpx;
+  flex-direction: column;
+}
+.header .information .username{
+  font-size: 36rpx;
+  margin-top: 12rpx;
+  font-weight: 500;
+}
+.header .information .autograph{
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 36rpx;
+}
+
+/* model */
+.model{
+  background: #fff;
+  margin: 24rpx;
+  border-radius: 24rpx;
+}
+.model_item_image{
+  width: 77rpx;
+  height: 77rpx;
+  padding: 12rpx;
+}
+.model_item_txt{
+  color: #1296db;
+  font-size: 24rpx;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+navigator {
+  background: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width:100%;
+  height: calc((100vw - 24rpx) / 4);
+}

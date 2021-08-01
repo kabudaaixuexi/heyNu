@@ -1,0 +1,49 @@
+module.exports= {
+  atitle:function(gtitle){
+    return gtitle.split(' ')
+  },
+  btitle:function(gtitle){
+    if(gtitle){return gtitle.split(',')}
+  },
+  ctitle:function(gtitle){
+    return gtitle.split('|')
+  },
+  evaluatestatus: function(gtitle){
+    var status = ''
+    switch (gtitle){
+      case '1':
+        status = '写追评'
+      break;
+      case '2':
+        status = '已追评'
+      break;
+      case '3':
+        status = '已过期'
+      break;
+      case '4':
+        status = '备用状态'
+      break;
+      default:;
+    }
+    return status
+  },
+  orderstatus:function(gtitle){
+    var status = ''
+    switch (gtitle){
+      case '1':
+        status = '待评价'
+      break;
+      case '2':
+        status = '待取餐'
+      break;
+      case '3':
+        status = '已完成'
+      break;
+      case '4':
+        status = '备用状态'
+      break;
+      default:;
+    }
+    return status
+  },
+}

@@ -1,0 +1,17 @@
+.content-bg {
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+ 
+.content-bg>.content-block {
+  pointer-events: auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+}

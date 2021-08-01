@@ -1,0 +1,18 @@
+<div style="height:{{navHeight}}rpx" class="_tabbar">
+    <div class="titem {{tabbatIndex=='3'?'tCdk':''}}" data-index="3" bind:tap="switchTap">
+        <image mode="aspectFill"  class="image {{tabbatIndex=='3'?'tCdkImg rubber':''}}" src="{{tabbatIndex=='3'?'../../assets/icon/wallet_selected.png':'../../assets/icon/wallet.png'}}" />
+        <b class="_tabbarTxt {{tabbatIndex=='3'?'tCdkTxt':''}}">记录</b>
+    </div>
+    <div class="titem {{tabbatIndex=='0'?'tCdk':''}}" data-index="0" bind:tap="switchTap">
+        <image mode="aspectFill" class="image {{tabbatIndex=='0'?'tCdkImg rubber':''}}" src="{{tabbatIndex=='0'?'../../assets/icon/index_selected.png':'../../assets/icon/index.png'}}" />
+        <b class="_tabbarTxt {{tabbatIndex=='0'?'tCdkTxt':''}}">首页</b>
+    </div>
+    <div class="titem {{tabbatIndex=='1'?'tCdk':''}}" data-index="1" bind:tap="switchTap">
+        <image mode="aspectFill"  class="image {{tabbatIndex=='1'?'tCdkImg rubber':''}}" src="{{tabbatIndex=='1'?'../../assets/icon/order_selected.png':'../../assets/icon/order.png'}}" />
+        <b class="_tabbarTxt {{tabbatIndex=='1'?'tCdkTxt':''}}">订单</b>
+    </div>
+    <div class="titem {{tabbatIndex=='2'?'tCdk':''}}" data-index="2" bind:tap="switchTap">
+        <image mode="aspectFill"  class="image {{tabbatIndex=='2'?'tCdkImg rubber':''}}" src="{{tabbatIndex=='2'?'../../assets/icon/wallet_selected.png':'../../assets/icon/wallet.png'}}" />
+        <b class="_tabbarTxt {{tabbatIndex=='2'?'tCdkTxt':''}}">我的</b>
+    </div>
+</div>

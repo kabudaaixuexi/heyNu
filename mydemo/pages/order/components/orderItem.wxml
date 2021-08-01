@@ -1,0 +1,38 @@
+<wxs module="filter" src="../../../utils/filter.wxs"></wxs>
+<view class="order_item">
+    <view class="row">
+        <view class="title">取餐手机号：</view>
+        <view class="context">{{data.phone}}</view>
+    </view>
+    <view class="row">
+        <view class="title">取餐地址：</view>
+        <view class="context">{{data.remark}}</view>
+    </view>
+    <view class="row">
+        <view class="title">订单号：</view>
+        <view class="context">{{data.orderid}}</view>
+    </view>
+    <view class="row">
+        <view class="title">支付价格：</view>
+        <view class="context">{{data.totalprice}}元</view>
+    </view>
+    <view class="row">
+        <view class="title">备注：</view>
+        <view class="context">{{data.tip}}</view>
+    </view>
+    <view class="row">
+        <view class="title">订单状态：</view>
+        <view class="context">{{filter.orderstatus(data.status)}}</view>
+    </view>
+    <view wx:for="{{data.detail}}" class="food">
+        <image src="{{item.imgurl}}"></image>
+        <view style="width:60%;text-align:center">{{item.name}}</view>
+        <view>x {{item.cnt}}</view>
+        <view style="flex:1;text-align:right">¥ {{item.price}}</view>
+    </view>
+    <view class="options">
+        <view wx:if="{{data.status=='1'}}" class="btn pending" bindtap="pending">去评价</view>
+        <view wx:if="{{data.status=='3'}}" class="btn over" >已完成</view>
+        <view wx:if="{{data.status=='2'}}" class="btn takemeal" bindtap="takemeal">取餐</view>
+    </view>
+</view>

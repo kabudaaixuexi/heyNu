@@ -1,0 +1,20 @@
+<navigation bgColor="yellow" showBack="{{false}}"/>
+<template is="tab" data="{{...tab}}"/>
+<customTabbar tabbatIndex="3" />
+
+
+
+
+
+
+<template name="tab">
+  <view class="tab-wrap">
+    <tab tab-cur="{{tabCur}}"
+        tab-data="{{tabData}}"
+        color="{{color}}"
+        size="{{size}}"
+        scroll
+        bindchange="tabChange">
+    </tab>
+  </view>
+</template>

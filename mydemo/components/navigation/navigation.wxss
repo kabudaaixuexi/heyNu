@@ -1,0 +1,49 @@
+.navigation{
+  position: fixed;
+  top: 0;
+  padding-bottom: 10px;
+  width: 100vw;
+  background: #fff;
+  z-index: 10;
+  
+}
+.con{
+  padding: 0 40rpx 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.leftcon{
+  display: flex;
+  padding-left: 24rpx;
+  height: 100%;
+  padding-right: 40rpx;
+  margin-top: 6rpx;
+  font-weight: 500;
+  align-items: center;
+}
+.leftcon image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.container{
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  color: #333;
+  transform: translate(-50%,-50%);
+  font-size:25rpx;
+  font-weight: 360;
+}
+.pull{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.pull image{
+  width: 70rpx;
+  height: 70rpx;
+  transform: translateY(20rpx) 
+}

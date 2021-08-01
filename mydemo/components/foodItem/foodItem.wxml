@@ -1,0 +1,18 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<view class="food_item">
+  <view class="item_left">
+      <image src="{{data.imgurl}}" />
+  </view>
+  <view class="item_con">
+      <view class="fname">{{data.name}}</view>
+      <view class="label">
+          <view class="label_item" wx:for="{{filter.btitle(data.label)}}">
+            {{item}}
+          </view>
+      </view>
+  </view>
+  <view class="item_right">
+      <view class="cnt">x {{data.cnt}}</view>
+      <view class="price"><text style="font-size:24rpx">¥ </text>{{data.price}}</view>
+  </view>
+</view>

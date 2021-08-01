@@ -1,0 +1,58 @@
+.food_item{
+  display: grid;
+  background: #fff;
+  width: 100%;
+  grid-template-columns: 2fr 5fr 3fr;
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+.item_left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.item_left image{
+  padding: 0;
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  border-radius: 6rpx;
+  background: #f6f6f6;
+}
+
+.item_con{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.item_con .fname{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.item_con .label{
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item_con .label .label_item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12rpx;
+  background: #f6f6f6;
+  border-radius: 3rpx;
+  padding: 3rpx 6rpx;
+  font-size: 16rpx;
+}
+
+.item_right{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.item_right .cnt{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 26rpx;
+}
+.item_right .price{
+  font-size: 30rpx;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

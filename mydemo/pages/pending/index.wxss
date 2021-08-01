@@ -1,0 +1,99 @@
+.pending{
+  margin: 24rpx;
+  background: #fff;
+  padding-bottom: 36rpx;
+  border-radius: 12rpx;
+}
+.pending .top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.pending .top .pic{
+}
+.pending .top .pic image{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  margin: 24rpx;
+  background: #cdcdcd;
+}
+.pending .top .title{
+  display: flex;
+  padding: 24rpx 0;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pending .top .title .name{
+  font-size: 28rpx;
+  font-weight: 500;
+  text-align: left;
+}
+.pending .top .title .detail{
+  display: flex;
+  justify-content: space-between;
+}
+.pending .top .title .detail .label{
+  display: flex;
+  align-items: center;
+  font-size: 18rpx;
+}
+.pending .top .title .detail .label .label_item{
+  padding: 6rpx 12rpx;
+  background: #f6f6f6;
+  border-radius: 2rpx;
+  margin-right: 12rpx;
+}
+.pending .top .title .detail .total{
+  display: flex;
+  width: 30%;
+  padding-right: 36rpx;
+  justify-content: space-between;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pending .top .title .detail .total .cnt{
+  font-weight: 24rpx;
+}
+.pending .top .title .detail .total .price{
+  font-size: 32rpx;
+}
+
+
+.input{
+  height: 120rpx !important;
+  align-items: flex-start !important;
+}
+
+
+.pending .cotainer .up_img{
+  padding:24rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pending .cotainer .up_img .up_logo{
+  width: 60rpx;
+  display: block;
+  border:1px solid #f6f6f6;
+  height: 60rpx;
+  border-radius: 12rpx;
+  padding:30rpx
+}
+.pending .cotainer .up_img .img{
+  margin-right: 36rpx;
+  position: relative;
+  margin-bottom: 36rpx;
+}
+.pending .cotainer .up_img .img .picitem{
+  width: 120rpx;
+  height: 120rpx;
+  display: block;
+  background: #000;
+}
+.del{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height:20px;
+  width:20px;
+}

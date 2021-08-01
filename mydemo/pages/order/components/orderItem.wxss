@@ -1,0 +1,63 @@
+.order_item{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  margin: 24rpx;
+  padding: 24rpx;
+  border-radius: 24rpx;
+}
+.order_item .row{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 12rpx 0;
+  align-items: flex-end;
+}
+.order_item .row .title{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 26rpx;
+}
+.order_item .row .context{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24rpx;
+}
+.order_item .food{
+  display: flex;
+  margin: 36rpx 0 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24rpx;
+}
+.order_item .food image{
+  display: block;
+  width: 56rpx;
+  padding: 0;
+  height: 56rpx;
+  background: #f6f6f6;
+  border-radius: 6px;
+}
+
+.order_item .options{
+  border-top: 1px outset #f6f6f6;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24rpx;
+  padding: 24rpx 0 12rpx;
+}
+.btn{
+  padding: 12rpx 36rpx;
+  border-radius: 6rpx;
+  margin-left: 36rpx;
+  font-size: 20rpx;
+}
+.pending{
+  border: 1px solid #000;
+}
+.takemeal{
+  border: 1px solid #1296db;
+  color: #1296db;
+}
+.over{
+  background: #f6f6f6;
+  color: #666;
+  border: 1px solid #f5f5f5;
+}

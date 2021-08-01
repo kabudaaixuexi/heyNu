@@ -1,0 +1,18 @@
+<view class="navigation" style="padding-top:{{menuButtonObject.top}}px">
+  <view class="con" style="height:{{menuButtonObject.height}}px">
+    <view bindtap="back" class="leftcon">
+        <image wx:if="{{showBack}}" src="/assets/publicIcon/left.png" />
+        <slot name="leftcon"></slot>
+    </view>
+    <view class="container">
+        <slot name="container"></slot>
+    </view>
+    <view wx:if="{{rightconShow}}" bindtap="rightcon" class="rightcon">
+        <slot name="rightcon"></slot>
+    </view>  
+  </view>
+</view>
+<view style="height:{{menuButtonObject.bottom + 10}}px"></view>
+<view class=""></view>
+
+

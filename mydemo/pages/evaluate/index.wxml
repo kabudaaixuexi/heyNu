@@ -1,0 +1,64 @@
+<wxs module="filter" src="../../utils/filter.wxs"></wxs>
+<scroll-view style="height:100vh" scroll-y class="evaluate">
+    <view wx:for="{{list}}" class="evaluate_item">
+        <view class="op" >
+            <view data-orderid="{{item.orderid}}"  bindtap="opClick" class="op_d">
+                <image src="/assets/evaluate/more.png" />
+            </view>
+            <view class="op_l {{currentid == item.orderid?'show_op':'hidden_op'}}">
+                <view class="op_l_i" data-orderid="{{item.orderid}}" bindtap="delEvaluate">删除</view>
+            </view>
+        </view>
+        <view class="top">
+            <view class="date">
+                <view style="margin-top:4rpx">{{item.evaluatedate}}</view>
+                 <i-rate 
+                    size="14"
+                    count="{{10}}"
+                    disabled="{{true}}"
+                    value="{{item.score}}">
+                 </i-rate>
+            </view>
+            <view class="con">
+                {{item.evaluate}}
+            </view>
+            <view class="evaluate_img" data-list="{{item.evaluateimgurl}}"  bindtap="imgYu" wx:if="{{item.evaluateimgurl}}">
+                <image mode="widthFix"  wx:for="{{item.evaluateimgurl}}" src="{{item}}" />
+            </view>
+        </view>
+        <view class="container">
+            <i-panel i-class="panel" style="width:100%" title="订单号：{{item.orderid}}">
+                <foodItem wx:for="{{item.foodlist}}" data="{{item}}" />
+            </i-panel>
+        </view>
+        <view class="foot">
+            <view wx:if="{{item.review}}" class="review">
+                <view class="reviewdate">追评时间： {{item.reviewdate}}</view>
+                <view class="con">追加评价： {{item.review}}</view>
+            </view>
+            <view class="options">
+                <view data-orderid="{{item.orderid}}" bindtap="writeReview" wx:if="{{item.status=='1'}}" class="btn can">
+                    {{filter.evaluatestatus(item.status)}}
+                </view>
+                <view wx:if="{{item.status=='2'}}" class="btn aly">
+                    {{filter.evaluatestatus(item.status)}}
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+
+
+<dialog wx:if="{{dialogShow}}" bind:emptyClick="emptyClick"> 
+  <view class="review_dialog">
+      <i-input i-class="input"  maxlength="100" type="textarea" bind:change="inputChange" value="{{ review }}" placeholder="请输入追评" />
+      <view class="review_option">
+          <i-button style="margin-top:188rpx" i-class="button" bind:click="commitClick" type="primary" loading="{{loading}}">提交</i-button>
+      </view>
+  </view>
+</dialog>
+
+
+<i-toast id="toast" />
+<i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>

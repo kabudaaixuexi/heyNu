@@ -1,0 +1,11 @@
+<movable-area class="content-bg">
+  <movable-view x="{{x}}" y="{{y}}" inertia class='content-block breathe' bindtap='add' direction="all" scale scale-min="1" scale-max="3000" scale-value="{{scale}}"  bindlongtap=
+   "longTap" 
+   style="background:{{backC}}"
+   bindtouchmove="touchMove"
+   bindtouchstart=
+   "touchStart" 
+   bindtouchend=
+   "touchEnd">{{msg}}
+  </movable-view>
+</movable-area>

@@ -1,0 +1,4 @@
+<view class="empty" bindtap="emptyClick"></view>
+<view class="model">
+    <slot></slot>
+</view>
